@@ -28,6 +28,8 @@ Ce travail a été réalisé dans le cadre d'un projet encadré par Mr. Camille 
 
 Nous allons commencer, en premier lieu, par une **partie Préliminaire**, en exposant les configurations matérielles nécessaires. Ensuite, dans la partie **Utilisation**, nous allons présenter les différents contrôleurs utilisés. Finalement, nous allons clôturer cette documentation par le **Manuel du jeu**, en détaillant les règles et les démarches de notre jeu.
 
+**[`^        back to top        ^`](#)**
+
 ## 2.Prérequis:
 Ci-dessous sont listé les outils requis pour l'utilisation du processeur Plasma et les PMODs.
 ### Configuration
@@ -51,6 +53,9 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 `PmodKYPD.vhd` bloc principal qui permet la gestion du clavier.
 `pmodoledrgb_bitmap.vhd` bloc principal qui permet de controler l'affichage Bitmap.
 `main.c`( *trouvé dans le dossier `projet_e2` du répertoire `C`*) fichier en language C qui contient le corps de programme principale et les fonctions qui permette de gérer les séquences de notre jeu.
+
+**[`^        back to top        ^`](#)**
+
 ## 3.Utilisation:
 ### PMOD OLED RGB
 
@@ -92,6 +97,10 @@ Le PMOD KEYPAD doit être relié au port **JA**. Pour assurer la bonne fonctionn
   <img src="ctrl_Pmod_KYPD.PNG" alt="Puissance 4 " height="250" width="300">
 
 </p>
+
+
+**[`^        back to top        ^`](#)**
+
 
 ## 4.Makefile:
 ### Build system
@@ -172,6 +181,8 @@ Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` e
 
 #### `Remarque:` 
 Il faut ajouter ` keypad_values`  et ` keypad_force`  à la liste de sensibilité de processus **misc_proc**.
+
+**[`^        back to top        ^`](#)**
 
 ## 5.Manuel d'jeu:
 ### Pour jouer au puissance 4, il vous faut :
