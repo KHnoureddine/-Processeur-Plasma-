@@ -13,6 +13,12 @@
 
 # ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
 
+<p align="center">
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/puissance_4_r%C3%A9el.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/go-next.png" alt="go " height="250" width="250">
+	
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/puissance_4_oled.jpg" alt="Puissance 4 projet " height="250" width="250">
+</p>
 
 # 1.Introduction:
 Le présent document constitue le rapport de projet sur le cours "Système programmable sur puce reconfigurable" **EN211**, présenté ci-dessous et dénommé « Implémentation d’un jeu de puissance 4 sur un soc reconfigurable **processeur Plasma**».
@@ -29,6 +35,11 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 * Une carte de développement **NEXYS 4 DDR** pour implanter le processeur plasma.
 * Un module **Pmod KEYPAD** pour permet l’utilisateur d’entrer ses choix. 
 * Un module **Pmod RGB-OLED** pour afficher l’interface du jeu. 
+
+<p align="center">
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/projet_global.jpg" alt="Puissance 4 " height="250" width="250">
+</p>
+
 * Le logiciel **VIVADO** pour le chargement du bitstream.
 ### Fichiers_sources
 `plasma.vhd` dans lequel est instancié le bloc de gestion de l'afficheur **Pmod RGB-OLED** et le clavier **Pmod KEYPAD** , les entrées/sorties et signaux pilotant le bloc y sont cablés.
@@ -142,6 +153,23 @@ Il faut ajouter ` keypad_values`  et ` keypad_force`  à la liste de sensibilit�
 Pour commencer une partie de puissance 4, on désigne le premier joueur. Celui-ci met un de ses jetons de couleur dans l’une des colonnes de son choix. Le deuxième joueur insère à son tour son jeton, de l’autre couleur dans la colonne de son choix. Le premier jeton tombe alors en bas du deuxième jeton, s’ils sont de même colonne. Et ainsi de suite jusqu’à obtenir une rangée de 4 jetons de même couleur.
 ### Comment gagner une partie de puissance 4 :
 Pour gagner une partie de puissance 4, il suffit d’être le premier à aligner 4 jetons de sa couleur **horizontalement**, **verticalement** ou **diagonalement**.
+
+<p align="center">
+	
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/horizontal.jpg" alt="Puissance 4 " height="250" width="250">
+  
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/vertical.jpg" alt="Puissance 4 " height="250" width="250">
+  
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/diagonal.jpg" alt="Puissance 4 " height="250" width="250">
+</p>
+
 Dans une partie, si tous les jetons sont joués **sans** qu’il y soit d’alignement de jetons, la partie est déclaré **nulle**.
+
+<p align="center">
+	
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/puissance_4_oled.jpg" alt="Puissance 4 " height="250" width="250">
+  
+</p>
+
 
 **[`^        back to top        ^`](#)**
