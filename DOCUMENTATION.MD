@@ -78,6 +78,7 @@ Afin d'ajouter **le contrôleur** au `build system`, nous avons définit :
 >CONFIG_KEYPAD ?= yes 
 * **Un bloc associant la configuration au generic :**
 >ifeq ($(CONFIG_KEYPAD),yes)
+
 >PLASMA_SOC_GENERICS += eKepad=1'b1
 
 >PLASMA_SOC_FILES += PmodKYPD.vhd
@@ -90,41 +91,43 @@ Afin d'ajouter **le contrôleur** au `build system`, nous avons définit :
 
 Ensuist pour assurer la forme structurelle du processeur plasma. En effet, il faut déclarer et définir les composants utilisés, puis dans le corps de l'architecture, il suffit de les connecter.
 >`component PmodKYPD` is
-Port (
 
-clk : in  STD_LOGIC;
+>Port (
 
-force : out  STD_LOGIC_VECTOR (31 downto 0);
+>clk : in  STD_LOGIC;
 
-JA : inout  STD_LOGIC_VECTOR (7 downto 0);
+>force : out  STD_LOGIC_VECTOR (31 downto 0);
 
-val: out STD_LOGIC_VECTOR (31 downto 0));
- >end `component PmodKYPD;`
+>JA : inout  STD_LOGIC_VECTOR (7 downto 0);
+
+>val: out STD_LOGIC_VECTOR (31 downto 0));
+
+>end `component PmodKYPD;`
 
 Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` et`top_plasma.vhd`.Sa valeur par défaut sera (à priori) placée à 1. Un bloc spécifique à l'instantiation du composant sera alors placée dans le fichier `plasma.vhd` tel que :
 
 >**keypad_gen_enabled**: if **eKepad = '1'** `generate`
 
-    plasma_keypad_controller: `PmodKYPD`
+>    plasma_keypad_controller: `PmodKYPD`
     
-        `port map`(
+>       `port map`(
 	
-             clk          => clk,
+>         clk          => clk,
 	     
-             force        => keypad_force,
+>         force        => keypad_force,
 	     
-             JA           => jA,
+>         JA           => jA,
 	     
-             val          => keypad_values);
+>         val          => keypad_values);
 	     
 >end `generate`;
 
 >**keypad_gen_gen_disabled**: if **eKepad = '0'** `generate`
 
-    keypad_values <= ZERO;
+>    keypad_values <= ZERO;
     
-    keypad_force <= ZERO;
-+>end `generate`;
+>    keypad_force <= ZERO;
+>end `generate`;
 
 #### `Remarque:` 
 Il faut ajouter ` keypad_values`  et ` keypad_force`  à la liste de sensibilité de processus **misc_proc**.
