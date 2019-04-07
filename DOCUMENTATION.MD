@@ -89,7 +89,7 @@ Le PMOD KEYPAD doit être relié au port **JA**. Pour assurer la bonne fonctionn
 
 <p align="center">
 	
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/ctrl_Pmod_KYPD.PNG" alt="Puissance 4 " height="250" width="300">
+  <img src="ctrl_Pmod_KYPD.PNG" alt="Puissance 4 " height="250" width="300">
 
 </p>
 
@@ -185,18 +185,18 @@ Pour gagner une partie de puissance 4, il suffit d’être le premier à aligner
 
 <p align="center">
 	
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/horizontal.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="horizontal.jpg" alt="Puissance 4 " height="250" width="250">
   
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/vertical.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="vertical.jpg" alt="Puissance 4 " height="250" width="250">
   
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/diagonal.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="diagonal.jpg" alt="Puissance 4 " height="250" width="250">
 </p>
 
 Dans une partie, si tous les jetons sont joués **sans** qu’il y soit d’alignement de jetons, la partie est déclaré **nulle**.
 
 <p align="center">
 	
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/puissance_4_oled.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="puissance_4_oled.jpg" alt="Puissance 4 " height="250" width="250">
   
 </p>
 
