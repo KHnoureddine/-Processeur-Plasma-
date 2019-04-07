@@ -1,4 +1,4 @@
-- [1.Introduction:](#introduction:)
+- [1.Introduction](#introduction)
 - [2.Prérequis:](#prérequis:)
     - [Configuration](#configuration)
     - [Fichiers sources](#Fichiers-sources)
