@@ -1,13 +1,17 @@
 - [1.Introduction:](#1.Introduction:)
+
 - [2.Prérequis:](#2.Prérequis:)
     - [Configuration](#configuration)
     - [Fichiers sources](#Fichiers_sources)
+    
 - [3.Utilisation:](#3.Utilisation:)
     - [PMOD_OLED_RGB](#PMOD_OLED_RGB)
     - [PMOD_KEYPAD](#PMOD_KEYPAD)
+    
 - [4.Makefile:](#4.Makefile:)
     - [Build_system](#Build_system)
     - [Ajout_du_contrôleur_KEYPAD](#Ajout_du_contrôleur_KEYPAD)
+    
 - [5.Manuel_d'jeu:](#Manuel_d'jeu)
 
 
