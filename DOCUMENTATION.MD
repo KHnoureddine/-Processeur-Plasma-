@@ -25,6 +25,7 @@
 # 1.Introduction:
 Le présent document constitue le rapport de projet sur le cours "Système programmable sur puce reconfigurable" **EN211**, présenté ci-dessous et dénommé « Implémentation d’un jeu de puissance 4 sur un soc reconfigurable **processeur Plasma**».
 Cette documentation a pour objectif de démontrer le principe de fonctionnement de notre jeu, et de détailler l'architecture du processeur Plasma lors de son utilisation.
+
 Ce processeur a été instancié sur une puce FPGA *Artix 7* embarquée sur carte *NEXYS 4 DDR*. Il est basé sur une architecture RISC 32-bit softcore et est issu d'un projet open source : [**Plasma**](http://opencores.org/project,plasma) . L'utilisation des PMODs repose sur une interface plus flexible codée en C et faisant abstraction du langage de description VHDL.
 Ce travail a été réalisé dans le cadre d'un projet encadré par Mr. Camille LEROUX en option **Systèmes Numériques Hétérogènes**, et élaboré par Anas OUANNAS, Omar KHALIL, et Noureddine KHANFIR.
 
