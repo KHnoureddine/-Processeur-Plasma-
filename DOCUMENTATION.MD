@@ -14,7 +14,7 @@
 # ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
 
 <p align="center">
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/puissance_4_r%C3%A9el.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="puissance_4_r%C3%A9el.jpg" alt="Puissance 4 " height="250" width="250">
   <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/go-next.png" alt="go " height="250" width="250">
 	
   <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/puissance_4_oled.jpg" alt="Puissance 4 projet " height="250" width="250">
@@ -33,6 +33,11 @@ Ci-dessous sont listé les outils requis pour l'utilisation du processeur Plasma
 ### Configuration
 Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs sont les suivants :
 * Une carte de développement **NEXYS 4 DDR** pour implanter le processeur plasma.
+
+<p align="left">
+
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/nexys_4_ddr.png" alt="Puissance 4 " height="250" width="250">
+
 * Un module **Pmod KEYPAD** pour permet l’utilisateur d’entrer ses choix. 
 * Un module **Pmod RGB-OLED** pour afficher l’interface du jeu. 
 
@@ -49,6 +54,15 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 ## 3.Utilisation:
 ### PMOD_OLED_RGB
 
+
+<p align="center">
+	
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/OLED_RGB.jpg" alt="Puissance 4 " height="250" width="300">
+
+</p>
+
+
+
 Le **PMOD OLED-RGB** est un écran qui permet :
 * L'affichage de caractères ASCII sous 8 lignes X 16 colonnes. 
 * L’affichage Bitmap sous 96X64 avec 16 bits/pixel.
@@ -59,10 +73,25 @@ Pour notre projet, nous avons utilisé la configuration **OLED_RGB_Bitmap** pour
 Par la suite, nous pouvons reseter l'état de l’afficheur par l'adresse **OLED bitmap reset** (`0x400004B0`). La valeur de composant affiché est envoyée à l’adresse **OLED bitmap data** (`0x400004B8`).
 Dans notre système, l’afficheur **PMOD_OLED_RGB** doit être connecté sur le port **JD**.
 ### PMOD_KEYPAD
+
+
+<p align="center">
+	
+  <img src="Pmod_KYPD.png" alt="Puissance 4 " height="250" width="300">
+
+</p>
+
+
+
 Le **PMOD KEYPAD** est un clavier à 16 touches au format hexadécimal (0-F). En pilotant numériquement une ligne liée à une colonne, le système peut déterminer quel bouton est actuellement appuyé.
 Le fichier VHDL de ce PMOD est déjà trouvé sur le platform de [**DIGILENTIN**]( https://reference.digilentinc.com/reference/pmod/pmodkypd/start?_ga=2.151394366.661079877.1554350031-663000342.1552301098)
 Le PMOD KEYPAD doit être relié au port **JA**. Pour assurer la bonne fonctionnement du controleur **PMOD KEYPAD**, il faut que la valeur du bouton appuyé soit trouvée à l’adresse **KEYPAD_VALUES_ADD** (`0x400004DC`), et nous avons contrôlé l’accès à cette valeur par un signal associé à l’adresse **KEYPAD_VALUES_FORCE** (`0x400004E0`).
 
+<p align="center">
+	
+  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/ctrl_Pmod_KYPD.PNG" alt="Puissance 4 " height="250" width="300">
+
+</p>
 
 ## 4.Makefile:
 ### Build_system
