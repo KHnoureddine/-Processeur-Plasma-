@@ -84,14 +84,11 @@ Par la suite, nous pouvons reseter l'état de l’afficheur par l'adresse **OLED
 Dans notre système, l’afficheur **PMOD_OLED_RGB** doit être connecté sur le port **JD**.
 ### PMOD KEYPAD
 
-
 <p align="center">
 	
   <img src="Pmod_KYPD.png" alt="Puissance 4 " height="250" width="300">
 
 </p>
-
-
 
 Le **PMOD KEYPAD** est un clavier à 16 touches au format hexadécimal (0-F). En pilotant numériquement une ligne liée à une colonne, le système peut déterminer quel bouton est actuellement appuyé.
 Le fichier VHDL de ce PMOD est déjà trouvé sur le platform de [**DIGILENTIN**]( https://reference.digilentinc.com/reference/pmod/pmodkypd/start?_ga=2.151394366.661079877.1554350031-663000342.1552301098)
