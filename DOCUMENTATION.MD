@@ -1,8 +1,8 @@
-- [1.Introduction:](#1introduction)
-- [2.Prérequis:](#2.Prérequis:)
+- [1.Introduction:](#1.Introduction:)
+- [2.Prérequis:](#2pr%C3%A9requis)
     - [Configuration](#configuration)
     - [Fichiers sources](#Fichiers-sources)
-- [3.Utilisation:](#Utilisation)
+- [3.Utilisation:](#3Utilisation)
     - [PMOD OLED_RGB](#PMOD-OLED-RGB)
     - [PMOD KEYPAD](#PMOD-KEYPAD)    
 - [4.Makefile:](#4.Makefile)
@@ -20,7 +20,7 @@
   <img src="puissance_4_oled.jpg" alt="Puissance 4 projet " height="250" width="250">
 </p>
 
-## 1.Introduction:
+# 1.Introduction:
 Le présent document constitue le rapport de projet sur le cours "Système programmable sur puce reconfigurable" **EN211**, présenté ci-dessous et dénommé « Implémentation d’un jeu de puissance 4 sur un soc reconfigurable **processeur Plasma**».
 Cette documentation a pour objectif de démontrer le principe de fonctionnement de notre jeu, et de détailler l'architecture du processeur Plasma lors de son utilisation.
 Ce processeur a été instancié sur une puce FPGA *Artix 7* embarquée sur carte *NEXYS 4 DDR*. Il est basé sur une architecture RISC 32-bit softcore et est issu d'un projet open source : [**Plasma**](http://opencores.org/project,plasma) . L'utilisation des PMODs repose sur une interface plus flexible codée en C et faisant abstraction du langage de description VHDL.
