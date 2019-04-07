@@ -1,14 +1,14 @@
-- [1.Introduction:](#Introduction:)
-- [2.Prérequis:](#Prérequis:)
+- [1.Introduction:](#introduction:)
+- [2.Prérequis:](#prérequis:)
     - [Configuration](#configuration)
     - [Fichiers sources](#Fichiers_sources)
 - [3.Utilisation:](#Utilisation:)
-    - [PMOD_OLED_RGB](#PMOD_OLED_RGB)
-    - [PMOD_KEYPAD](#PMOD_KEYPAD)    
+    - [PMOD OLED_RGB](#PMOD_OLED_RGB)
+    - [PMOD KEYPAD](#PMOD_KEYPAD)    
 - [4.Makefile:](#Makefile:)
-    - [Build_system](#Build_system)
-    - [Ajout_du_contrôleur_KEYPAD](#Ajout_du_contrôleur_KEYPAD)    
-- [5.Manuel_d'jeu:](#Manuel_d'jeu)
+    - [Build system](#Build_system)
+    - [Ajout du contrôleur KEYPAD](#Ajout_du_contrôleur_KEYPAD)    
+- [5.Manuel d'jeu:](#Manuel_d'jeu)
 
 
 # ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
@@ -46,13 +46,13 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 </p>
 
 * Le logiciel **VIVADO** pour le chargement du bitstream.
-### Fichiers_sources
+### Fichiers sources
 `plasma.vhd` dans lequel est instancié le bloc de gestion de l'afficheur **Pmod RGB-OLED** et le clavier **Pmod KEYPAD** , les entrées/sorties et signaux pilotant le bloc y sont cablés.
 `PmodKYPD.vhd` bloc principal qui permet la gestion du clavier.
 `pmodoledrgb_bitmap.vhd` bloc principal qui permet de controler l'affichage Bitmap.
 `main.c`( *trouvé dans le dossier `projet_e2` du répertoire `C`*) fichier en language C qui contient le corps de programme principale et les fonctions qui permette de gérer les séquences de notre jeu.
 ## 3.Utilisation:
-### PMOD_OLED_RGB
+### PMOD OLED RGB
 
 
 <p align="center">
@@ -63,7 +63,7 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 
 
 
-Le **PMOD OLED-RGB** est un écran qui permet :
+Le **PMOD_OLED_RGB** est un écran qui permet :
 * L'affichage de caractères ASCII sous 8 lignes X 16 colonnes. 
 * L’affichage Bitmap sous 96X64 avec 16 bits/pixel.
 * L'affichage de jusqu'à 4 courbes a également été instancié.
@@ -94,7 +94,7 @@ Le PMOD KEYPAD doit être relié au port **JA**. Pour assurer la bonne fonctionn
 </p>
 
 ## 4.Makefile:
-### Build_system
+### Build system
 Le build system utilisé pour le SoC Plasma repose sur le `Makefile` principal qui prend en charge l'ensemble des actions récurrentes relatives au Plasma. 
 La liste des fichiers VHDL est définie avec la variable `PLASMA_SOC_FILES`, qui est utilisée pour générer les instructions de synthèse du design. 
 Plusieurs paramètres peuvent être configurés au moyen de variables makes passées en argument à la commande, de même, pour activer ou désactiver la prise en charge des différents contrôleurs (qui sont tous activés par défaut) :
@@ -112,7 +112,7 @@ Plusieurs paramètres peuvent être configurés au moyen de variables makes pass
 * CONFIG_VGA ?= no
 * `CONFIG_KEYPAD ?= yes`
 
-### Ajout_du_contrôleur_KEYPAD
+### Ajout du contrôleur KEYPAD
 Afin d'ajouter **le contrôleur** au `build system`, nous avons définit :
 * **Une variable de configuration associée à une valeur de generic en VHDL :**
 >CONFIG_KEYPAD ?= yes 
@@ -129,7 +129,7 @@ Afin d'ajouter **le contrôleur** au `build system`, nous avons définit :
 
 >endif
 
-Ensuist pour assurer la forme structurelle du processeur plasma. En effet, il faut déclarer et définir les composants utilisés, puis dans le corps de l'architecture, il suffit de les connecter.
+Ensuist pur assurer la forme structurelle du processeur plasma. En effet, il faut déclarer et définir les composants utilisés, puis dans le corps de l'architecture, il suffit de les connecter.
 >`component PmodKYPD` is
 
 >Port (
@@ -173,7 +173,7 @@ Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` e
 #### `Remarque:` 
 Il faut ajouter ` keypad_values`  et ` keypad_force`  à la liste de sensibilité de processus **misc_proc**.
 
-## 5.Manuel_d'jeu:
+## 5.Manuel d'jeu:
 ### Pour jouer au puissance 4, il vous faut :
 * Le plateau du jeu et ses **24** emplacements pour jetons répartis en **4 lignes** et **6 colonnes**.
 * **24 jetons** de **2** couleurs différentes
