@@ -186,6 +186,10 @@ Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` e
 
 #### `Remarque:` 
 Il faut ajouter ` keypad_values`  et ` keypad_force`  à la liste de sensibilité de processus **misc_proc**.
+Il faut affecter ces signaux Les adresses équivalentes:
+* when `x"400004DC"` => cpu_data_r <= `keypad_values`;
+* when `x"400004E0"` => cpu_data_r <= `keypad_force` ;
+
 
 **[`^        back to top        ^`](#)**
 
