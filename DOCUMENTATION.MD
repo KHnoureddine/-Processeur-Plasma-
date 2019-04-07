@@ -50,8 +50,11 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 * Le logiciel **VIVADO** pour le chargement du bitstream.
 ### Fichiers sources
 `plasma.vhd` dans lequel est instancié le bloc de gestion de l'afficheur **Pmod RGB-OLED** et le clavier **Pmod KEYPAD** , les entrées/sorties et signaux pilotant le bloc y sont cablés.
+
 `PmodKYPD.vhd` bloc principal qui permet la gestion du clavier.
+
 `pmodoledrgb_bitmap.vhd` bloc principal qui permet de controler l'affichage Bitmap.
+
 `main.c`( *trouvé dans le dossier `projet_e2` du répertoire `C`*) fichier en language C qui contient le corps de programme principale et les fonctions qui permette de gérer les séquences de notre jeu.
 
 **[`^        back to top        ^`](#)**
