@@ -34,7 +34,7 @@ Ci-dessous sont listé les outils requis pour l'utilisation du processeur Plasma
 Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs sont les suivants :
 * Une carte de développement **NEXYS 4 DDR** pour implanter le processeur plasma.
 
-<p align="centre">
+<p align="center">
 
   <img src="nexys_4_ddr.png" alt="Puissance 4 " height="250" width="250">
 
