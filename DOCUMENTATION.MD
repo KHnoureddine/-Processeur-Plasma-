@@ -11,7 +11,7 @@
     - [Ajout du contrôleur KEYPAD](#Ajout-du-contrôleur-KEYPAD)    
 - [5.Manuel d'jeu:](#5Manuel-djeu)
 
-**[`        back to Bottom        `](#)**
+
 
 # ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
 
