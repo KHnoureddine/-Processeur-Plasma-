@@ -142,7 +142,7 @@ Afin d'ajouter **le contrôleur** au `build system`, nous avons définit :
 
 >endif
 
-Ensuist pur assurer la forme structurelle du processeur plasma. En effet, il faut déclarer et définir les composants utilisés, puis dans le corps de l'architecture, il suffit de les connecter.
+Ensuist pur assurer la forme structurelle du processeur plasma, il faut déclarer et définir les composants utilisés, puis dans le corps de l'architecture, il suffit de les connecter.
 >`component PmodKYPD` is
 
 >Port (
