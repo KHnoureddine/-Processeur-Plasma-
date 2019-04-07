@@ -77,7 +77,7 @@ L'ajout des divers modules de ce PMOD au projet repose sur le travail de [**Mr. 
 Pour notre projet, nous avons utilisé la configuration **OLED_RGB_Bitmap** pour afficher l’environnement graphique du jeu.   
 Par la suite, nous pouvons reseter l'état de l’afficheur par l'adresse **OLED bitmap reset** (`0x400004B0`). La valeur de composant affiché est envoyée à l’adresse **OLED bitmap data** (`0x400004B8`).
 Dans notre système, l’afficheur **PMOD_OLED_RGB** doit être connecté sur le port **JD**.
-### PMOD_KEYPAD
+### PMOD KEYPAD
 
 
 <p align="center">
