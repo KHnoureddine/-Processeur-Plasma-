@@ -8,7 +8,7 @@
 - [4.Makefile:](#4.Makefile:)
     - [Build_system](#Build_system)
     - [Ajout_du_contrôleur_KEYPAD](#Ajout_du_contrôleur_KEYPAD)
-- [5.Manuel_d'jeu](#Manuel_d'jeu)
+- [5.Manuel_d'jeu:](#Manuel_d'jeu)
 
 
 # ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
