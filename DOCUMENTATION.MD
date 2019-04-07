@@ -1,14 +1,14 @@
 - [1.Introduction](#introduction)
-- [2.Prérequis:](#prérequis:)
+- [2.Prérequis:](#prérequis)
     - [Configuration](#configuration)
     - [Fichiers sources](#Fichiers-sources)
-- [3.Utilisation:](#Utilisation:)
+- [3.Utilisation:](#Utilisation)
     - [PMOD OLED_RGB](#PMOD-OLED-RGB)
     - [PMOD KEYPAD](#PMOD-KEYPAD)    
-- [4.Makefile:](#Makefile:)
+- [4.Makefile:](#Makefile)
     - [Build system](#Build-system)
     - [Ajout du contrôleur KEYPAD](#Ajout-du-contrôleur-KEYPAD)    
-- [5.Manuel d'jeu:](#5.Manuel-d'jeu:)
+- [5.Manuel d'jeu](#5.Manuel-d'jeu)
 
 
 # ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
