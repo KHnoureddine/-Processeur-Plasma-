@@ -15,9 +15,9 @@
 
 <p align="center">
   <img src="puissance_4_r%C3%A9el.jpg" alt="Puissance 4 " height="250" width="250">
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/go-next.png" alt="go " height="250" width="250">
+  <img src="go-next.png" alt="go " height="250" width="250">
 	
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/puissance_4_oled.jpg" alt="Puissance 4 projet " height="250" width="250">
+  <img src="puissance_4_oled.jpg" alt="Puissance 4 projet " height="250" width="250">
 </p>
 
 # 1.Introduction:
