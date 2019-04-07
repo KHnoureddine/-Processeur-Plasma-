@@ -12,13 +12,7 @@
 
 
 # ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
-<p align="center">
-  <img src="D:/Formation/Gelec2/tp_SOCP/plasma_pmod (1).tar/DOCUMENTATION/SRC/puissance_4_réel.jpg" alt="Puissance_4" height="250" width="250">
-</p>
-![40% center](SRC/puissance_4_réel.jpg)
-<p align="center">
-  <img src="D:\Formation\Gelec2\tp_SOCP\plasma_pmod (1).tar\DOCUMENTATION\SRC\puissance_4_oled.jpg" alt="Puissance_4_projet" height="250" width="250">
-</p>
+
 
 # 1.Introduction:
 Le présent document constitue le rapport de projet sur le cours "Système programmable sur puce reconfigurable" **EN211**, présenté ci-dessous et dénommé « Implémentation d’un jeu de puissance 4 sur un soc reconfigurable **processeur Plasma**».
@@ -117,7 +111,7 @@ Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` e
 #### `Remarque:` 
 Il faut ajouter ` keypad_values`  et ` keypad_force`  à la liste de sensibilité de processus **misc_proc**.
 
-## 5.Manuel_d'jeu
+## 5.Manuel_d'jeu:
 ### Pour jouer au puissance 4, il vous faut :
 * Le plateau du jeu et ses **24** emplacements pour jetons répartis en **4 lignes** et **6 colonnes**.
 * **24 jetons** de **2** couleurs différentes
