@@ -93,15 +93,9 @@ Dans notre système, l’afficheur **PMOD_OLED_RGB** doit être connecté sur le
 </p>
 
 Le **PMOD KEYPAD** est un clavier à 16 touches au format hexadécimal (0-F). En pilotant numériquement une ligne liée à une colonne, le système peut déterminer quel bouton est actuellement appuyé.
-Le fichier VHDL de ce PMOD est déjà trouvé sur le platform de [**DIGILENTIN**]( https://reference.digilentinc.com/reference/pmod/pmodkypd/start?_ga=2.151394366.661079877.1554350031-663000342.1552301098)
+Le fichier VHDL de ce PMOD est déjà trouvé sur le platform de [**DIGILENTIN**]( https://reference.digilentinc.com/reference/pmod/pmodkypd/start?_ga=2.151394366.661079877.1554350031-663000342.1552301098).
+
 Le PMOD KEYPAD doit être relié au port **JA**. Pour assurer la bonne fonctionnement du controleur **PMOD KEYPAD**, il faut que la valeur du bouton appuyé soit trouvée à l’adresse **KEYPAD_VALUES_ADD** (`0x400004DC`), et nous avons contrôlé l’accès à cette valeur par un signal associé à l’adresse **KEYPAD_VALUES_FORCE** (`0x400004E0`).
-
-<p align="center">
-	
-  <img src="ctrl_Pmod_KYPD.PNG" alt="Puissance 4 " height="250" width="300">
-
-</p>
-
 
 **[`^        back to top        ^`](#)**
 
@@ -189,6 +183,13 @@ Il faut ajouter ` keypad_values`  et ` keypad_force`  à la liste de sensibilit�
 Il faut affecter ces signaux à Les adresses équivalentes:
 * when `x"400004DC"` => cpu_data_r <= `keypad_values`;
 * when `x"400004E0"` => cpu_data_r <= `keypad_force` ;
+
+
+<p align="center">
+	
+  <img src="ctrl_Pmod_KYPD.PNG" alt="Puissance 4 " height="250" width="300">
+
+</p>
 
 
 **[`^        back to top        ^`](#)**
