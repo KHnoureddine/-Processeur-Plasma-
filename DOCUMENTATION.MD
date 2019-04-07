@@ -198,7 +198,7 @@ Dans une partie, si tous les jetons sont joués **sans** qu’il y soit d’alig
 	
   <img src="puissance_4_oled.jpg" alt="Puissance 4 " height="250" width="250">
   
-</p>
+</p> 
 
 
 **[`^        back to top        ^`](#)**
