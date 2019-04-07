@@ -108,25 +108,25 @@ Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` e
 
 >**keypad_gen_enabled**: if **eKepad = '1'** `generate`
 
->    plasma_keypad_controller: `PmodKYPD`
-    
->       `port map`(
-	
->         clk          => clk,
-	     
->         force        => keypad_force,
-	     
->         JA           => jA,
-	     
->         val          => keypad_values);
+>plasma_keypad_controller: `PmodKYPD`
+
+>`port map`(
+
+>clk          => clk,
+
+>force        => keypad_force,
+
+>JA           => jA,
+
+>val          => keypad_values);
 	     
 >end `generate`;
 
 >**keypad_gen_gen_disabled**: if **eKepad = '0'** `generate`
 
->    keypad_values <= ZERO;
+>keypad_values <= ZERO;
     
->    keypad_force <= ZERO;
+>keypad_force <= ZERO;
 >end `generate`;
 
 #### `Remarque:` 
