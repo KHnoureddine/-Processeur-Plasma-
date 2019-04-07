@@ -36,13 +36,13 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 
 <p align="left">
 
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/nexys_4_ddr.png" alt="Puissance 4 " height="250" width="250">
+  <img src="nexys_4_ddr.png" alt="Puissance 4 " height="250" width="250">
 
 * Un module **Pmod KEYPAD** pour permet l’utilisateur d’entrer ses choix. 
 * Un module **Pmod RGB-OLED** pour afficher l’interface du jeu. 
 
 <p align="center">
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/projet_global.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="projet_global.jpg" alt="Puissance 4 " height="250" width="250">
 </p>
 
 * Le logiciel **VIVADO** pour le chargement du bitstream.
@@ -57,7 +57,7 @@ Les outils nécessaires pour l'utilisation du processeur Plasma avec les PMODs s
 
 <p align="center">
 	
-  <img src="https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/OLED_RGB.jpg" alt="Puissance 4 " height="250" width="300">
+  <img src="OLED_RGB.jpg" alt="Puissance 4 " height="250" width="300">
 
 </p>
 
