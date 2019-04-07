@@ -127,6 +127,7 @@ Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` e
 >keypad_values <= ZERO;
     
 >keypad_force <= ZERO;
+
 >end `generate`;
 
 #### `Remarque:` 
