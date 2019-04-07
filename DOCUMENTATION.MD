@@ -78,19 +78,30 @@ Afin d'ajouter **le contrôleur** au `build system`, nous avons définit :
 >CONFIG_KEYPAD ?= yes 
 * **Un bloc associant la configuration au generic :**
 >ifeq ($(CONFIG_KEYPAD),yes)
+
 >PLASMA_SOC_GENERICS += eKepad=1'b1
+
 >PLASMA_SOC_FILES += PmodKYPD.vhd
+
 >else
+
 >PLASMA_SOC_GENERICS += eKepad=1'b0
+
 >endif
 
 Ensuist pour assurer la forme structurelle du processeur plasma. En effet, il faut déclarer et définir les composants utilisés, puis dans le corps de l'architecture, il suffit de les connecter.
 >`component PmodKYPD` is
+
         Port (
+	
               clk : in  STD_LOGIC;
+	      
               force : out  STD_LOGIC_VECTOR (31 downto 0);
+	      
               JA : inout  STD_LOGIC_VECTOR (7 downto 0);
+	      
               val: out STD_LOGIC_VECTOR (31 downto 0));
+	      
 >end `component PmodKYPD;`
 
 Le generic devra par la suite être répercuté dans les fichiers `plasma.vhd` et`top_plasma.vhd`.Sa valeur par défaut sera (à priori) placée à 1. Un bloc spécifique à l'instantiation du composant sera alors placée dans le fichier `plasma.vhd` tel que :
