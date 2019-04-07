@@ -42,7 +42,7 @@ Le **PMOD OLED-RGB** est un écran qui permet :
 * L'affichage de caractères ASCII sous 8 lignes X 16 colonnes. 
 * L’affichage Bitmap sous 96X64 avec 16 bits/pixel.
 * L'affichage de jusqu'à 4 courbes a également été instancié.
-
+      
 L'ajout des divers modules de ce PMOD au projet repose sur le travail de [**Mr. BORNAT**](http://bornat.vvv.enseirb.fr/wiki/doku.php?id=en202:pmodoledrgb).
 Pour notre projet, nous avons utilisé la configuration **OLED_RGB_Bitmap** pour afficher l’environnement graphique du jeu.   
 Par la suite, nous pouvons reseter l'état de l’afficheur par l'adresse **OLED bitmap reset** (`0x400004B0`). La valeur de composant affiché est envoyée à l’adresse **OLED bitmap data** (`0x400004B8`).
