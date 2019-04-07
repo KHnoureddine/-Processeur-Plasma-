@@ -1,7 +1,7 @@
 - [1.Introduction:](#1.Introduction:)
 - [2.Prérequis:](#2.Prérequis:)
-	- [Configuration](#configuration)
-	- [Fichiers sources](#Fichiers_sources)
+    - [Configuration](#configuration)
+    - [Fichiers sources](#Fichiers_sources)
 - [3.Utilisation:](#3.Utilisation:)
     - [PMOD_OLED_RGB](#PMOD_OLED_RGB)
     - [PMOD_KEYPAD](#PMOD_KEYPAD)
@@ -78,14 +78,13 @@ Afin d'ajouter **le contrôleur** au `build system`, nous avons définit :
 >CONFIG_KEYPAD ?= yes 
 * **Un bloc associant la configuration au generic :**
 >ifeq ($(CONFIG_KEYPAD),yes)
+>PLASMA_SOC_GENERICS += eKepad=1'b1
 
-PLASMA_SOC_GENERICS += eKepad=1'b1
+>PLASMA_SOC_FILES += PmodKYPD.vhd
 
-PLASMA_SOC_FILES += PmodKYPD.vhd
+>else
 
-else
-
-PLASMA_SOC_GENERICS += eKepad=1'b0
+>PLASMA_SOC_GENERICS += eKepad=1'b0
 
 >endif
 
