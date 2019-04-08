@@ -1,3 +1,13 @@
+
+# ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
+
+<p align="center">
+  <img src="puissance_4_r%C3%A9el.jpg" alt="Puissance 4 " height="250" width="250">
+  <img src="go-next.png" alt="go " height="250" width="250">
+	
+  <img src="puissance_4_oled.jpg" alt="Puissance 4 projet " height="250" width="250">
+</p>
+
 # ___*`SOMMAIRE`*___
 - [1.Introduction:](#1Introduction)
 - [2.Prérequis:](#2pr%C3%A9requis)
@@ -12,17 +22,7 @@
 - [5.Manuel d'jeu:](#5Manuel-djeu)
 
 
-
-# ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
-
-<p align="center">
-  <img src="puissance_4_r%C3%A9el.jpg" alt="Puissance 4 " height="250" width="250">
-  <img src="go-next.png" alt="go " height="250" width="250">
-	
-  <img src="puissance_4_oled.jpg" alt="Puissance 4 projet " height="250" width="250">
-</p>
-
-# 1.Introduction:
+## 1.Introduction:
 Le présent document constitue le rapport de projet sur le cours "Système programmable sur puce reconfigurable" **EN211**, présenté ci-dessous et dénommé « Implémentation d’un jeu de puissance 4 sur un soc reconfigurable **processeur Plasma**».
 Cette documentation a pour objectif de démontrer le principe de fonctionnement de notre jeu, et de détailler l'architecture du processeur Plasma lors de son utilisation.
 
