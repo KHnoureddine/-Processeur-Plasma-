@@ -1,5 +1,5 @@
 
-# ___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___
+# [___*Implémentation d’un jeu de puissance 4 sur un soc reconfigurable `processeur Plasma`*___](https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/DOCUMENTATION.MD)
 
 <p align="center">
   <img src="puissance_4_r%C3%A9el.jpg" alt="Puissance 4 " height="250" width="250">
