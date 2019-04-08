@@ -1,5 +1,5 @@
 
-[**Implémentation d’un jeu de puissance 4 sur un soc reconfigurable PROCESSEUR PLASMA**](https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/DOCUMENTATION.MD)
+[**Implémentation d’un jeu de puissance 4 sur un soc reconfigurable processeur Plasma**](https://github.com/KHnoureddine/-Processeur-Plasma-/blob/master/DOCUMENTATION.MD)
 
 # *`SOMMAIRE`*
 - [1.Introduction:](#1Introduction)
