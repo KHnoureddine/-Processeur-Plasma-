@@ -30,7 +30,7 @@ Cette documentation a pour objectif de démontrer le principe de fonctionnement 
 
 Ce processeur a été instancié sur une puce FPGA *Artix 7* embarquée sur carte *NEXYS 4 DDR*. Il est basé sur une architecture RISC 32-bit softcore et est issu d'un projet open source : [**Plasma**](http://opencores.org/project,plasma) . L'utilisation des PMODs repose sur une interface plus flexible codée en C et faisant abstraction du langage de description VHDL.
 
-Ce travail a été réalisé dans le cadre d'un projet encadré par Mr. **Camille LEROUX** en option **Systèmes Numériques Hétérogènes**, et élaboré par **Anas OUANNAS**, **Omar KHALIL KHEY**, et **Noureddine KHANFIR**.
+Ce travail a été réalisé dans le cadre d'un projet encadré par Mr. **Camille LEROUX** en option **Systèmes Numériques Hétérogènes**, et élaboré par **Anas OUANNAS**, **Omar Khalil KHEY**, et **Noureddine KHANFIR**.
 
 Nous allons commencer, en premier lieu, par une **partie Préliminaire**, en exposant les configurations matérielles nécessaires. Ensuite, dans la partie **Utilisation**, nous allons présenter les différents contrôleurs utilisés. Finalement, nous allons clôturer cette documentation par le **Manuel du jeu**, en détaillant les règles et les démarches de notre jeu.
 
